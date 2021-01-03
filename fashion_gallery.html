@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Responsive Gallery</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <!-- magnific popup -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==" crossorigin="anonymous" />
+</head>
+<body>
+     <!-- navbar -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Navbar</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-5">
+              <a class="nav-link active ml-5" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link ml-5" href="fashion_gallery.html">fashion gallery</a>
+              <!-- <a class="nav-link ml-5" href="order.html">orders</a> -->
+              <a class="nav-link ml-5" href="collection.html">collections</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+<div class="container">
+	<div class="py-5">
+	     <h1 class="text-center display-3"> MY FASHION GALLERY </h1>	
+	     <hr class="text-center w-25 border-dark">
+	</div>
+
+   <div class="row no-gutters gallerys">
+   	 <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+   	 	<a href="images/gal1.webp" target="_black" title="linkimg1">
+   	 		<img src="images/gal1.webp" target="_black" alt="gal1" class="img-fluid">
+   	 	</a>
+   	 </div>
+     
+     <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+   	 	<a href="images/gal2.webp" target="_black" title="linkimg2">
+   	 		<img src="images/gal2.webp" target="_black" alt="gal2" class="img-fluid">
+   	 	</a>
+   	 </div>
+
+   	 <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+   	 	<a href="images/gal3.webp" target="_black" title="linkimg3">
+   	 		<img src="images/gal3.webp" target="_black" alt="gal3" class="img-fluid">
+   	 	</a>
+   	 </div>
+
+   	 <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+   	 	<a href="images/gal4.webp" target="_black" title="linkimg4">
+   	 		<img src="images/gal4.webp" target="_black" alt="gal4" class="img-fluid">
+   	 	</a>
+   	 </div>
+
+   	 <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+   	 	<a href="images/gal5.webp" target="_black" title="linkimg5">
+   	 		<img src="images/gal5.webp" target="_black" alt="gal5" class="img-fluid">
+   	 	</a>
+   	 </div>
+
+   	 <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+   	 	<a href="images/gal6.webp" target="_black" title="linkimg6">
+   	 		<img src="images/gal6.webp" target="_black" alt="gal6" class="img-fluid">
+   	 	</a>
+   	 </div>
+
+   	 <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+   	 	<a href="images/gal7.webp" target="_black" title="linkimg6">
+   	 		<img src="images/gal7.webp" target="_black" alt="gal7" class="img-fluid">
+   	 	</a>
+   	 </div>
+
+   	 <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+   	 	<a href="images/gal8.webp" target="_black" title="linkimg6">
+   	 		<img src="images/gal8.webp" target="_black" alt="gal8" class="img-fluid">
+   	 	</a>
+   	 </div>
+
+   	 <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+   	 	<a href="images/gal9.webp" target="_black" title="linkimg6">
+   	 		<img src="images/gal9.webp" target="_black" alt="gal9" class="img-fluid">
+   	 	</a>
+   	 </div>
+
+   </div>
+</div>
+<br><br>
+<hr>
+<br><br>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <!-- magnific popup -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous"></script>
+
+ <script >
+ 	   $(document).ready(function(){
+            $('.gallerys').magnificPopup({
+               type: 'image',
+               delegate: 'a',
+               gallery : {
+               	  enabled : true
+               }
+            });
+ 	   });
+ </script>
+
+<!-- footer -->
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="jumbotron text-center">
+        <h1></h1> 
+        <a href="index.html">home</a>
+        <a href="fashion_gallery.html">fashion_gallery</a>
+        <!-- <a href="order"> order</a> -->
+        <a href="collection.html">collection</a> 
+        <form class="form-inline">
+          <div class="input-group">
+            <!-- <input type="email" class="form-control" size="50" placeholder="Email Address" required> -->
+            <div class="input-group-btn">
+              <a href="login_registration.html"><button type="button text-center" class="mt-5 btn btn-danger">Log Out</button></a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
